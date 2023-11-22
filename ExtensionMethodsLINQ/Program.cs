@@ -20,6 +20,7 @@ namespace ExtensionMethodsLINQ
 
             var response = numbers.Product();
 
+            Console.WriteLine(response);
             // Result: 24
 
             var persons = new List<Person>
@@ -62,7 +63,6 @@ namespace ExtensionMethodsLINQ
             return source.Aggregate((current, next) => current * next);
         }
     }
-
     public class Person
     {
         public string? Name { get; set; }
